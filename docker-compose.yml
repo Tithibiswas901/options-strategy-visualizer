@@ -1,0 +1,7 @@
+services:
+  options-visualizer:
+    build: .
+    container_name: options-visualizer
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
