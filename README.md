@@ -25,7 +25,7 @@ An interactive, containerized web application for analyzing options trading stra
 docker compose up --build
 ```
 
-Then open http://localhost:8501
+Then open https://options-strategy-visualizer-fx2ifcqidgrasm7mi8wzf5.streamlit.app/
 
 ### Run locally with Python
 
@@ -63,7 +63,7 @@ Black-Scholes assumes European exercise, no dividends, constant volatility, and 
 
 ## Docker
 
-Multi-stage build: dependencies compile in a builder stage; the runtime stage carries only the venv and application code. Final image runs as a non-root user with a healthcheck against Streamlit's health endpoint. Image size: under 500MB.
+Multi-stage build: dependencies compile in a builder stage; the runtime stage carries only the venv and application code. Final image runs as a non-root user with a healthcheck against Streamlit's health endpoint. 
 
 ## Future Work
 
